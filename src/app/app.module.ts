@@ -7,12 +7,18 @@ import { AppComponent } from './app.component';
 import { routing } from './app.routing';
 import { ShredditComponent } from './shreddit/shreddit.component';
 import { AboutComponent } from './about/about.component';
+import { SkateComponent } from './skate/skate.component';
+import { BmxComponent } from './bmx/bmx.component';
+import { PostDetailComponent } from './post-detail/post-detail.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ShredditComponent,
-    AboutComponent
+    AboutComponent,
+    SkateComponent,
+    BmxComponent,
+    PostDetailComponent
   ],
   imports: [
     BrowserModule,

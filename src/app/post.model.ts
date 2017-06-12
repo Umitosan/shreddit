@@ -4,7 +4,7 @@ export class Post {
         public title: string,
         public body: string,
         public imgURL: string,
-        public score: number
+        public score: number,
+        public id: number
           ) {}
-
 }
