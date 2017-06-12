@@ -5,6 +5,7 @@ export class Post {
         public body: string,
         public imgURL: string,
         public score: number,
-        public id: number
+        public id: number,
+        public category: string
           ) {}
 }

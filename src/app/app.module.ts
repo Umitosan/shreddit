@@ -10,6 +10,7 @@ import { AboutComponent } from './about/about.component';
 import { SkateComponent } from './skate/skate.component';
 import { BmxComponent } from './bmx/bmx.component';
 import { PostDetailComponent } from './post-detail/post-detail.component';
+import { SkatesPipe } from './skates.pipe';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { PostDetailComponent } from './post-detail/post-detail.component';
     AboutComponent,
     SkateComponent,
     BmxComponent,
-    PostDetailComponent
+    PostDetailComponent,
+    SkatesPipe
   ],
   imports: [
     BrowserModule,
