@@ -1,9 +1,6 @@
-<p>
-  skate works!
-</p>
+<h3>Skate path</h3>
 
-
-<div *ngFor="let post of posts | skates:'skate'">
+<div *ngFor="let post of posts | postspipe:'skateboard'">
   <div class="panel panel-default">
     <div class="panel-heading">
       <h4 class="panel-title"><em>{{post.title}}</em>  -  (score= {{post.score}})</h4>

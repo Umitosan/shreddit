@@ -2,16 +2,16 @@ import { Pipe, PipeTransform } from '@angular/core';
 import { Post } from './post.model';
 
 @Pipe({
-  name: 'skates',
+  name: 'postspipe',
   pure: false
 })
 
-export class SkatesPipe implements PipeTransform {
+export class PostsPipe implements PipeTransform {
 
-  transform(input: Post[]) {
+  transform(input: Post[], selectedCategory) {
     var output: Post[] = [];
     for (var i = 0; i < input.length; i++) {
-      if (input[i].category === "skate") {
+      if (input[i].category === selectedCategory) {
         output.push(input[i]);
       }
     }
