@@ -1,0 +1,14 @@
+<p>new-post works!</p>
+
+<div *ngIf="newPostFormClicked">
+  <h3>New Post:</h3>
+  <div>
+    <label>Title:</label> <input #newTitle><br>
+    <label>Body:</label> <input #newBody><br>
+    <label>Image URL:</label> <input #newImgURL><br>
+    <label>Score:</label> <input #newScore><br>
+    <label>id:</label> <input #newId><br>
+    <label>Category:</label> <input #newCategory><br>
+    <button class="btn btn-success btn-sm" (click)="doneWithNewPostFormClicked()" (click)="submitForm(newTitle.value, newBody.value, newImgURL.value, newScore.value, newId.value, newCategory.value); newTitle.value=''; newBody.value=''; newImgURL.value=''; newCategory.value=''; ">Save new Post</button>
+  </div>
+</div>

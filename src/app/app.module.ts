@@ -11,6 +11,7 @@ import { SkateComponent } from './skate/skate.component';
 import { BmxComponent } from './bmx/bmx.component';
 import { PostDetailComponent } from './post-detail/post-detail.component';
 import { PostsPipe } from './posts-pipe.pipe';
+import { NewPostComponent } from './new-post/new-post.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { PostsPipe } from './posts-pipe.pipe';
     SkateComponent,
     BmxComponent,
     PostDetailComponent,
-    PostsPipe
+    PostsPipe,
+    NewPostComponent
   ],
   imports: [
     BrowserModule,
